@@ -7,7 +7,7 @@ på Fortnox-sidor, så att de blir lätta att hitta i tabeller och listor.
 > Fortnox AB. "Fortnox" är ett varumärke som tillhör Fortnox AB och används här
 > enbart för att beskriva vad tillägget är kompatibelt med.
 
-Markerar element som har `data-tooltip="Visa kopplade bilder"`, t.ex.:
+Markerar element vars `data-tooltip` innehåller "Visa kopplade bilder", t.ex.:
 
 ```html
 <i data-model-key="" class="cursor icon-picture custom-tooltip " data-tooltip="Visa kopplade bilder"></i>
@@ -31,10 +31,13 @@ nås aldrig ikonerna. Räknaren och badgen summerar över alla frames.
   sig själv, så toggeln slår igenom i både skal och iframe direkt.
 - **Räknare:** popupen räknar ikoner i alla frames (via `chrome.scripting`) och
   summerar — visar hur många "Visa kopplade bilder"-ikoner som finns på sidan nu.
-- **Badge på ikonen:** varje frame rapporterar sitt antal till en service worker
-  som summerar per flik och sätter siffran direkt på verktygsfältsikonen, utan
-  att popupen behöver öppnas. Orange badge = markering på, grå = av. En
-  debounce:ad `MutationObserver` håller siffran live när Fortnox ritar om sidan.
+- **Badge på ikonen:** när content-scriptet signalerar att sidan ändrats räknar
+  en service worker om ikonerna **live i alla frames** (via `chrome.scripting`)
+  och sätter siffran direkt på verktygsfältsikonen, utan att popupen behöver
+  öppnas. Samma räknemetod som popupen använder → badge och popup visar alltid
+  samma tal, och rivna iframes kan aldrig dubbelräknas. Orange badge = markering
+  på, grå = av. En debounce:ad `MutationObserver` håller siffran live när Fortnox
+  ritar om sidan.
 
 ## Installation (Developer Mode)
 
@@ -76,8 +79,8 @@ selektorn i `highlight.css`.
   [`PRIVACY.md`](PRIVACY.md).
 - **Integritet:** tillägget samlar inte in något och skickar inget externt.
   Enda lagrade datan är en på/av-flagga i `chrome.storage.local`.
-- **Ikoner:** genereras av `make_icons.py` (Pillow). Behövs bara köras om
-  designen ändras; `icons/*.png` är committade.
+- **Ikoner:** genereras av `make_icons.py` (kräver Pillow: `pip install Pillow`).
+  Behövs bara köras om designen ändras; `icons/*.png` är committade.
 
 ## Licens
 

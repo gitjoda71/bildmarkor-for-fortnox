@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Bildmarkör för Fortnox",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "description": "Gulmarkerar \"Visa kopplade bilder\"-ikoner i Fortnox så de blir lätta att hitta. På/av-toggle + räknare. Inofficiellt tillägg.",
   "permissions": ["storage", "scripting"],
   "host_permissions": ["https://*.fortnox.se/*"],

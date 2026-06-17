@@ -2,6 +2,10 @@
 
 _Senast uppdaterad: 2026-06-17_
 
+> **Inofficiellt tillägg** – inte anslutet till, sponsrat av eller godkänt av
+> Fortnox AB. "Fortnox" är ett varumärke som tillhör Fortnox AB och används här
+> enbart för att beskriva vad tillägget är kompatibelt med.
+
 ## Kort version
 
 Tillägget samlar **inte** in någon data, skickar **inget** till någon server
@@ -32,10 +36,15 @@ sidadresser och inga identifierare samlas in eller överförs.
   räkning, ingenting skickas vidare.
 - **`storage`** – för att komma ihåg på/av-läget.
 
+Popupen läser dessutom den aktiva flikens adress (URL) lokalt, enbart för att
+avgöra om du är på en Fortnox-sida. Adressen läses tillfälligt i minnet, lagras
+aldrig och skickas aldrig vidare.
+
 ## Externa anrop
 
 Inga. Tillägget gör inga nätverksanrop över huvud taget.
 
 ## Kontakt
 
-Frågor om integritet: skapa ett ärende (issue) i GitHub-repot.
+Frågor om integritet: skapa ett ärende (issue) i GitHub-repot
+<https://github.com/gitjoda71/bildmarkor-for-fortnox/issues>.

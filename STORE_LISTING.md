@@ -17,6 +17,14 @@ Gulmarkerar "Visa kopplade bilder"-ikoner i Fortnox så de blir lätta att hitta
 
 Productivity / Workflow & Planning
 
+## Privacy policy-URL (klistras in i konsolens "Privacy" / "Privacy practices")
+
+https://github.com/gitjoda71/bildmarkor-for-fortnox/blob/main/PRIVACY.md
+
+Kryssa även "I do not collect or use user data" och intyga de tre
+certifieringarna (ingen försäljning, inget orelaterat syfte, ingen
+kreditvärdering) – stämmer eftersom tillägget inte samlar in någon data.
+
 ## Single purpose (krävs av Web Store)
 
 The extension has a single purpose: to visually highlight the "Visa kopplade
