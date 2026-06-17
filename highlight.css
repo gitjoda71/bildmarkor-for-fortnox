@@ -1,0 +1,19 @@
+/* Gulmarkerar alla "Visa kopplade bilder"-ikoner på Fortnox.
+
+   Markeringen gateas bakom klassen .fnx-markera-pa på <html>, som
+   content.js sätter/tar bort utifrån på/av-toggeln. Attributselektorn
+   matchar även ikoner som laddas in dynamiskt (SPA), så ingen
+   MutationObserver behövs.
+
+   *= (innehåller) i stället för = (exakt) gör matchningen tålig mot
+   ev. extra blanksteg eller suffix i tooltip-texten. */
+
+html.fnx-markera-pa [data-tooltip*="Visa kopplade bilder"] {
+  background-color: #ffeb3b !important;        /* gul markering */
+  color: #000 !important;                       /* svart ikon mot gult */
+  outline: 2px solid #f9a825 !important;        /* tydlig ram runt ikonen */
+  outline-offset: 1px !important;
+  border-radius: 3px !important;
+  box-shadow: 0 0 0 2px #ffeb3b, 0 0 7px 2px rgba(249, 168, 37, 0.85) !important;
+  /* liten "glow" så de syns även i en tät tabell */
+}

@@ -1,0 +1,3 @@
+# Låt inte Dropbox synka .git – GitHub är source of truth och skydd för repot.
+# Dropbox kan korrumpera git-repon vid samtidig skrivning från två datorer.
+.git

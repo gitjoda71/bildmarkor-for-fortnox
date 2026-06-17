@@ -1,0 +1,11 @@
+# OS-skräp
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Byggartefakter (zip för Web Store byggs av build_zip.py)
+dist/
+*.zip
+
+# Engångsexperiment
+_scratch/
