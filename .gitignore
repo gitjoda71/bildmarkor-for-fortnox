@@ -9,3 +9,8 @@ dist/
 
 # Engångsexperiment
 _scratch/
+
+# Skärmdumps-källor och butiksbilder (innehåller maskad Fortnox-data –
+# laddas upp till Web Store men hålls utanför det publika repot)
+store-assets/
+20??????_??????.png
